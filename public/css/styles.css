@@ -1,0 +1,21 @@
+.link {
+    align-items: center;
+    text-align: center;
+    align-self: center;
+    margin-top: 20%;
+    cursor: pointer;
+}
+
+.vertical-center { /*alinhamento vertical*/
+    min-height: 100%;  
+    min-height: 100vh; 
+  
+    display: flex;
+    align-items: center;
+  }
+  
+.horizontal-center {
+      margin: 0 auto;
+      width: 25%;
+  
+  }
