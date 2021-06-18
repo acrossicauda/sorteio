@@ -103,8 +103,15 @@ class Sorteio extends Controller
 
         $teams = [];
         
+        // convertendo para array
         $confirmados = json_decode(json_encode($confirmados), true);
         $limite = count($confirmados);
+
+        // trazendo primeiro os goleiros
+        usort($confirmados, function($a, $b) {
+			return $a['categoria'] != 'goleiro';
+		});
+        
         
         $i = 0;
         $cont = 0;
